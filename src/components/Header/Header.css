@@ -1,0 +1,208 @@
+.header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../../img/backgroundCurves.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% 80%;
+}
+
+
+.introdution {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1270px;
+    height: 100vh;
+    color: #fff;
+}
+
+
+
+/* intro text */
+.introText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 60%;
+    padding-left: 50px;
+   
+}
+
+.introText h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--text-secondary);
+}
+
+
+.introText h3 span img{
+    animation: handAnime .8s ease-in forwards infinite alternate;
+}
+
+.introText h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--green);
+    margin: 8px 0;
+}
+
+.devBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 290px;
+    height: 40px;
+    background: var(--green);
+    border-radius: 4px;
+    color: var(--bg-color);
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 20px;
+}
+
+.iconSocial {
+    font-size: 1.8rem;
+    color: var(--green);
+}
+
+.btnBox {
+    display: flex;
+}
+
+
+/*intro img */
+.introImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 60%;
+    
+}
+
+.introImg img {
+    width: 500px;
+    position: relative;
+    margin-bottom: 100px;
+    animation: imageAnime 4s ease-in forwards infinite alternate;
+}
+
+@keyframes imageAnime {
+    0% {
+        transform: translate3d(0px, 30px, 0px);
+    }
+
+
+    100% {
+        transform: translate3d(0px, 0px, 0px);
+    }
+    
+}
+
+@keyframes handAnime {
+    0% {
+        transform: rotate(20deg);
+    }
+
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+
+/* --- Responsive header --- */
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media screen and (max-width: 575.98px) {
+   
+
+}
+
+/* Small devices (tablet, 576px and up) */
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
+   
+}
+
+/* Small devices (tablet modo paisagem) */
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+ 
+}
+/* Large devices (desktops, 992px and up)*/
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+    .introdution {
+        max-width: 90%;
+    }
+
+    .introImg img {
+        width: 350px;
+    }
+
+    .introText h3 {
+        font-size: 1.1rem;
+    }
+
+    .introText h2 {
+        font-size: 2.5rem;
+    }
+
+    .devBox {
+        width: 260px;
+        height: 35px;
+        font-size: .9rem;
+    }
+
+    .iconSocial {
+        font-size: 1.5rem;
+    }
+
+    .header {
+        background-size: 100% 75%;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+    .introdution {
+        max-width: 90%;
+    }
+
+    .introImg img {
+        width: 450px;
+    }
+
+    .introText h3 {
+        font-size: 1.2rem;
+    }
+
+    .introText h2 {
+        font-size: 2.8rem;
+    }
+
+    .devBox {
+        width: 280px;
+        height: 38px;
+        font-size: 1rem;
+    }
+
+    .iconSocial {
+        font-size: 1.6rem;
+    }
+
+    .header {
+        background-size: 100% 75%;
+    }
+
+}
+

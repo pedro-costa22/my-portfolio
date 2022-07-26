@@ -1,0 +1,165 @@
+.cont_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    width: 1270px;
+    height: 60px;
+    position: absolute;   
+}
+
+.cont_nav .logo {
+    font-weight: 400;
+    color: var(--green);
+    font-size: 2rem;
+    text-decoration: none;
+    letter-spacing: 1px;
+   
+}
+
+.navbar, .navbar ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.navbar ul li a{
+    margin: 0px 10px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #fff;
+    line-height: 30px;
+    font-weight: 400;
+    position: relative;
+    
+}
+
+.navbar ul li a::after {
+    content: "";
+    position: absolute;
+    background-color: var(--green);
+    border-radius: 10px;
+    width: 0%;
+    height: 2px;
+    left: 50%;
+    right: 50%;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover::after {
+    width: 100%;
+    right: 0%;
+    left: 0%;
+}
+
+
+.btnTheme {
+    display: flex;
+    align-items: center;
+    border: 2px solid #ccc;
+    background: #ccc;
+    width: 50px;
+    height: 20px;
+    border-radius: 40px;
+    margin-left: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+/* dark mode */
+.btnTheme::before{
+    content: "";
+    position: absolute;
+    background-image: url(../../img/moon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 15px;
+    width: 50%;
+    height: 90%;
+    border-radius: 50%;
+    transition: .4s;
+    left: 0px;
+}
+
+
+.btnTheme::after{
+    content: "";
+    position: absolute;
+    background: var(--bg-color);
+    width: 35%;
+    height: 95%;
+    border-radius: 50%;
+    transition: .4s;
+    right: 1px;
+}
+
+
+/*White mode */
+
+.btnTheme.active {
+    border: 2px solid var(--bg-color);
+    background-color: var(--bg-color);
+}
+
+.btnTheme.active::before{
+    content: "";
+    position: absolute;
+    background-image: url(../../img/sun.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 15px;
+    width: 50%;
+    height: 90%;
+    border-radius: 50%;
+    transition: .4s;
+    left: 0px;
+}
+
+
+.btnTheme.active::after{
+    content: "";
+    position: absolute;
+    background: #fff;
+    width: 35%;
+    height: 95%;
+    border-radius: 50%;
+    transition: .4s;
+    right: 1px;
+}
+
+
+
+/* --- Responsive header --- */
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media screen and (max-width: 575.98px) {
+   
+
+}
+
+/* Small devices (tablet, 576px and up) */
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
+   
+}
+
+/* Small devices (tablet modo paisagem) */
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+ 
+}
+/* Large devices (desktops, 992px and up)*/
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+    .cont_nav {
+        max-width: 90%;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+    .cont_nav {
+        max-width: 90%;
+    }
+
+}
+
+
