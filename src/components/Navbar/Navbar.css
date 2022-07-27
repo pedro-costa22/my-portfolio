@@ -24,6 +24,8 @@
 }
 
 .navbar ul li a{
+    display: flex;
+    align-items: center;
     margin: 0px 10px;
     text-decoration: none;
     font-size: 1.2rem;
@@ -52,6 +54,27 @@
     right: 0%;
     left: 0%;
 }
+
+.iconList {
+    display: none;
+    font-size: 1.8rem;
+    margin-right: 10px;
+    color: var(--green);
+    
+}
+
+.btnMenuMobile {
+    display: none;
+    background: transparent;
+    border: none;
+}
+
+.iconMenu {
+   font-size: 3rem;
+   color: var(--green);
+}
+
+
 
 
 .btnTheme {
@@ -134,19 +157,189 @@
 
 /* Extra small devices (portrait phones, less than 576px)*/
 @media screen and (max-width: 575.98px) {
-   
+    .cont_nav {
+        max-width: 90%;
+    }
+
+    .cont_nav .logo {
+        font-size: 1.5rem;
+    }
+
+    .navbar {
+        flex-direction: column;
+        width: 300px;
+        padding: 20px;
+        position: fixed;
+        top: 80px;
+        right: -100%;
+        background-color: #1D1B26;
+        border-radius: 5px;
+        transition: all ease .4s;
+        z-index: 99;
+        box-shadow: rgba(14, 30, 37, 0.2) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+        
+    }
+
+    .navbar.active {
+        right: 5%;
+    }
+
+    .navbar, .navbar ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .navbar ul li{
+        margin: 20px 10px;  
+        
+    }
+
+    .navbar ul li a{
+        font-size: 1.3rem;
+        
+    }
+
+    .btnTheme {
+      margin: 15px 20px;
+      width: 60px;
+      height: 25px;
+    }
+
+    .iconList  {
+        display: block;
+        font-size: 1.3rem;
+    }
+
+    .btnMenuMobile {
+        display: block;
+    }
+
+    .iconMenu {
+        font-size: 2.2rem;
+    }
 
 }
 
 /* Small devices (tablet, 576px and up) */
 @media screen and (min-width: 576px) and (max-width: 767.98px) {
-   
+    .cont_nav {
+        max-width: 90%;
+    }
+
+    .cont_nav .logo {
+        font-size: 1.8rem;
+    }
+
+    .navbar {
+        flex-direction: column;
+        width: 300px;
+        padding: 20px;
+        position: fixed;
+        top: 80px;
+        right: -100%;
+        background-color: #1D1B26;
+        border-radius: 5px;
+        transition: all ease .4s;
+        z-index: 99;
+        box-shadow: rgba(14, 30, 37, 0.2) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+        
+    }
+
+    .navbar.active {
+        right: 5%;
+    }
+
+    .navbar, .navbar ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .navbar ul li{
+        margin: 20px 10px;  
+        
+    }
+
+    .navbar ul li a{
+        font-size: 1.5rem;
+        
+    }
+
+    .btnTheme {
+      margin: 15px 20px;
+      width: 70px;
+      height: 28px;
+    }
+
+    .iconList  {
+        display: block;
+        font-size: 1.5rem;
+    }
+
+    .btnMenuMobile {
+        display: block;
+    }
+
+    .iconMenu {
+        font-size: 2.5rem;
+    }
 }
 
 /* Small devices (tablet modo paisagem) */
 @media screen and (min-width: 768px) and (max-width: 991.98px) {
- 
+    .cont_nav {
+        max-width: 90%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        width: 300px;
+        padding: 20px;
+        position: fixed;
+        top: 80px;
+        right: -100%;
+        background-color: #1D1B26;
+        border-radius: 5px;
+        transition: all ease .4s;
+        z-index: 99;
+        box-shadow: rgba(14, 30, 37, 0.2) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+        
+    }
+
+    .navbar.active {
+        right: 5%;
+    }
+
+    .navbar, .navbar ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .navbar ul li{
+        margin: 20px 10px;  
+        
+    }
+
+    .navbar ul li a{
+        font-size: 1.6rem;
+        
+    }
+
+    .btnTheme {
+      margin: 15px 20px;
+      width: 70px;
+      height: 28px;
+    }
+
+    .iconList  {
+        display: block;
+    }
+
+    .btnMenuMobile {
+        display: block;
+    }
 }
+
+
 /* Large devices (desktops, 992px and up)*/
 @media screen and (min-width: 992px) and (max-width: 1199.98px) {
     .cont_nav {

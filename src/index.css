@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow: hidden;
+}
+
 :root{
   --bg-color: #020814;
   --bg-blue: #041029;
