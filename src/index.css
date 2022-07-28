@@ -6,12 +6,13 @@
 }
 
 html {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 :root{
   --bg-color: #020814;
   --bg-blue: #041029;
+  --bg-btn: #0A192F;
   --green: #64FFDA;
   --text: #F2F2F2;
   --text-secondary: #CCD6F6;

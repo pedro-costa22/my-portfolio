@@ -1,0 +1,32 @@
+.contFormation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1150px;
+    height: 350px;
+  
+}
+
+.formationButtons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 350px;
+    height: 100%;
+ 
+}
+
+.formationButtons h3 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 31px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: var(--green);
+}
+
+.formationText {
+    width: 900px;
+}

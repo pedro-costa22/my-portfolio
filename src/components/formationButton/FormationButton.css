@@ -1,0 +1,28 @@
+.btnFormation {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #CCD6F6;
+    width: 140px;
+    height: 35px;
+    left: 140px;
+    top: 626px;
+    background: transparent;
+    border: none;
+    padding: 0 10px;
+    border-left: 2px solid var(--bg-btn); 
+    cursor: pointer;
+    transition: all .2s;
+    opacity: .6;
+}
+
+.btnFormation:hover {
+    opacity: 1;
+}
+
+.activeFormation {
+    background: var(--bg-btn);
+    border-left: 2px solid var(--green); 
+    opacity: 1;
+}
+
