@@ -1,3 +1,19 @@
+.containerNav {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 80px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    transition: all .2s;
+}
+
+.containerNav.fixed {
+    position: fixed;
+    z-index: 999;
+    background: var(--bg-blue);
+}
+
+
 .cont_nav {
     display: flex;
     justify-content: space-between;

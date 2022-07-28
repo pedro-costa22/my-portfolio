@@ -9,7 +9,20 @@ function Navbar(){
     let logoText = '<PH/>';
 
     const [menuToggle, setMenuToggle] = useState(false);
+    const [navFixed, setNavFixed] = useState('');
     const navbar = useRef();
+
+    
+
+    window.addEventListener('scroll', () => {
+        let scrollPosition = window.pageYOffset;
+        
+        if(scrollPosition >= 800) {
+            setNavFixed('fixed');
+        }else {
+            setNavFixed('');
+        }
+    })
 
     useEffect(() => {
         let handleNavbar = navbar.current;
@@ -18,7 +31,8 @@ function Navbar(){
     }, [menuToggle])
 
     return (
-        <div className='cont_nav'>
+        <div className={`containerNav ${navFixed}`}>
+            <div className='cont_nav'>
             <a href='index.html' className='logo'>{logoText}</a>
 
             <nav className='navbar' ref={navbar}>
@@ -46,6 +60,7 @@ function Navbar(){
             <button className='btnMenuMobile' onClick={() => setMenuToggle(!menuToggle)}>
                 {menuToggle === false ? <FiAlignRight className='iconMenu'/> : <FiX className='iconMenu'/>}
             </button>
+        </div>
         </div>
     )
 };
