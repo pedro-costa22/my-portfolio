@@ -1,8 +1,8 @@
 import './About.css';
 
-import AboutButton from '../aboutButton/AboutButton';
-import Text from '../textAbout/Text';
-import DownloadButton from '../downloadButton/DownloadButton';
+import AboutButton from './aboutButton/AboutButton';
+import Text from './textAbout/Text';
+import DownloadButton from './downloadButton/DownloadButton';
 
 import Photo from '../../img/photograph.png';
 import { useState } from 'react';

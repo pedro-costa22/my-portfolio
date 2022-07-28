@@ -1,5 +1,5 @@
 import './DownloadButton.css';
-import curriculo from '../../img/Curriculo Pedro H. Costa.pdf';
+import curriculo from '../../../img/Curriculo Pedro H. Costa.pdf';
 
 function DownloadButton({icon, title}){
     return (

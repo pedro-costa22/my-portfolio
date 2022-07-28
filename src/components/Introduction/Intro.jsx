@@ -5,7 +5,7 @@ import { useEffect, useRef } from 'react';
 import vector from '../../img/vector.png';
 import handIcon from '../../img/handIcon.png';
 
-import SocialButton from '../../components/socialButton/SocialButton';
+import SocialButton from './socialButton/SocialButton';
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 
 

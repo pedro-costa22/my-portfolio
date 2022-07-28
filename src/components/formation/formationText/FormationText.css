@@ -1,0 +1,14 @@
+.textFormation h3 {
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+}
+
+.textFormation p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: var(--text);
+}

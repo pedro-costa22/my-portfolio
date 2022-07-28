@@ -1,0 +1,29 @@
+.contTech {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1000px;
+    height: 200px;
+}
+
+.contTech h3 {
+    font-family: 'Consolas';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+    color: #64FFDA;
+    margin-bottom: 20px;
+}
+
+.buttonsTech {
+    display: flex;
+    width: inherit;
+    justify-content: space-around;
+}
+
+.iconTech {
+    color: var(--green);
+    font-size: 5rem;
+}
