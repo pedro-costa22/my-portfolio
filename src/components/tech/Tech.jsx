@@ -16,8 +16,12 @@ function Tech(){
                 <TechButton icon={<FaJsSquare className='iconTech'/>}/>
                 <TechButton icon={<FaReact className='iconTech'/>}/>
                 <TechButton icon={<FaNodeJs className='iconTech'/>}/>
+                <TechButton icon={<FaNodeJs className='iconTech'/>}/>
+                <TechButton icon={<FaNodeJs className='iconTech'/>}/>
+                <TechButton icon={<FaNodeJs className='iconTech'/>}/>
                 
             </div>
+            
         </div>
     )
 

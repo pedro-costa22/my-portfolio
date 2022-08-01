@@ -6,7 +6,7 @@ function DownloadButton({icon, title}){
         <a href={curriculo} 
             download="Curriculo Pedro H. Costa.pdf" 
             type='application/pdf'
-            className='btnDownload'> {icon} {title}
+            className='btnDownload'> {icon}   {title}
         </a>
     )
 }

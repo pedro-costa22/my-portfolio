@@ -4,8 +4,9 @@
     align-items: center;
     justify-content: center;
 
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
+    margin: 15px;
     
     background: #192640;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -18,4 +19,84 @@
 .btnTech:hover{
     position: relative;
     transform: translate3d(0px, -5px, 0px);
+}
+
+/* --- Responsive about --- */
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media screen and (max-width: 575.98px) {
+    .contTech {
+        width: 90%;
+    }
+
+    .buttonsTech  {
+        width: 100%;
+    }
+
+    .btnTech {
+        width: 60px;
+        height: 60px;
+    }
+
+    .iconTech {
+        font-size: 3rem;
+    }
+
+}
+
+/* Small devices (tablet, 576px and up) */
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
+    .contTech {
+        width: 90%;
+    }
+
+    .buttonsTech  {
+        width: 100%;
+    }
+
+    .btnTech {
+        width: 80px;
+        height: 80px;
+    }
+
+    .iconTech {
+        font-size: 4rem;
+    }
+}
+
+/* Small devices (tablet modo paisagem) */
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+    .contTech {
+        width: 90%;
+    }
+
+    .buttonsTech  {
+        width: 100%;
+    }
+
+    .btnTech {
+        width: 80px;
+        height: 80px;
+    }
+
+    .iconTech {
+        font-size: 4rem;
+    }
+}
+
+
+/* Large devices (desktops, 992px and up)*/
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+    .buttonsTech  {
+        width: 90%;
+    }
+
+    .btnTech {
+        width: 90px;
+        height: 90px;
+    }
+
+    .iconTech {
+        font-size: 4.5rem;
+    }
 }

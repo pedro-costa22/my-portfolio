@@ -26,3 +26,20 @@
     opacity: 1;
 }
 
+
+
+
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
+    .btnFormation {
+        width: 115px;
+        font-size: 1rem;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+    .btnFormation {
+        width: 120px;
+        font-size: 1rem;
+    }
+}

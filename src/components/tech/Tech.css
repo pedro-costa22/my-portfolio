@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     width: 1000px;
-    height: 200px;
+    height: 400px;
 }
 
 .contTech h3 {
@@ -19,11 +19,20 @@
 
 .buttonsTech {
     display: flex;
+    flex-wrap: wrap;
     width: inherit;
-    justify-content: space-around;
+    justify-content: center;
+    width: 900px;
+    
 }
 
 .iconTech {
     color: var(--green);
-    font-size: 5rem;
+    font-size: 4.5rem;
 }
+
+
+
+
+
+  

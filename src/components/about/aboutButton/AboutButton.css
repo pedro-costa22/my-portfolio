@@ -35,3 +35,34 @@
     font-weight: 500;
     opacity: 1;
 }
+
+@media screen and (max-width: 575.98px)  {
+    .btnAbout {
+        font-size: .9rem;
+        height: 40px;
+    }
+}
+
+
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
+   .btnAbout {
+    font-size: .9rem;
+    height: 40px;
+   }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+    .btnAbout{
+        font-size: 1rem;
+        padding: 8px;
+        width: 45%;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1399px)  {
+    .btnAbout{
+        font-size: 1rem;
+        padding: 8px;
+        width: 45%;
+    }
+}
