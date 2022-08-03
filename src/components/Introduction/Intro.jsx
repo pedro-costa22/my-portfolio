@@ -1,6 +1,6 @@
 import './Intro.css';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 import vector from '../../img/vector.png';
 import handIcon from '../../img/handIcon.png';
@@ -14,34 +14,37 @@ function Introdution(){
 
     const linkedin = "https://www.linkedin.com/in/pedro-costa22";
     const github = "https://github.com/pedro-costa22";
+    const name = "Pedro Henrique";
 
-    let name = "Pedro Henrique";
-    let teste = [...name];
-
-    /*const name = useRef();
+    const [state, setState] = useState({
+        lettersName: [...name],
+        nameArray: [],
+        index: 0
+    })
 
     useEffect(() => {
-
-        //fazer com map no codigo
-        let lettersName = [...name.current.innerHTML];
-        let handleName = name.current;
-
-        handleName.innerHTML = '';
+        if(state.index <= state.lettersName.length) {
+           setTimeout(() => {
+            setState(prevState => ({
+                ...prevState,
+                nameArray: [...state.nameArray, state.lettersName[state.index]],
+                index: state.index + 1
+            }))
+           }, 75)
+        }
         
-        lettersName.forEach((letra, i) => {
-            setTimeout(() =>
-            handleName.innerHTML += letra, 75 * i)
-        }) 
-    },[]) */
+    },[state]) 
 
-  
-
-
+    
     return(
         <section className='introdution'>
         <div className='introText'>
             <h3>Hello World, Eu sou ... <span><img src={handIcon} /></span></h3>
-            <h2>{teste.map(letter => letter)}</h2>
+            <h2>
+                {state.nameArray.map(letter => {
+                    return letter
+                })}
+            </h2>
             <span className='devBox'>Desenvolvedor Front-end </span>
 
             <div className='btnBox'>
