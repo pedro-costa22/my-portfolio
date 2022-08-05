@@ -1,0 +1,53 @@
+.contProject {
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+    margin: 70px 0;
+    position: relative;
+}
+
+.contProject img {
+    width: 480px;
+    height: 220px;
+    border-left: 4px solid var(--green);
+    cursor: pointer;
+    transition: all ease .3s;
+}
+
+.contProject img:hover{
+    transform: scale(1.05);
+}
+
+.contProject h5{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: var(--text-secondary);
+    margin-top: 20px;
+}
+
+.contProject p {
+    font-family: "Inter", sans-serif;
+    font-size: .9rem;
+    color: #fff;
+    margin-top: 15px
+}
+
+.techBtn {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.techBtn span {
+    font-family: "Inter", sans-serif;
+    font-size: .9rem;
+    color: #fff;
+    margin: 0px 5px;
+}
+
+.btnLink {
+    position: absolute;
+    right: 0;
+    top: 240px;
+}

@@ -67,7 +67,7 @@ function About(){
         <div className={`cont_about ${state.visibleAbout === true ? 'visible' : ''}`} ref={positionAbout}>
 
             <div className='myFoto'>
-                <div className='borderPhotoTeste'>
+                <div className='borderPhoto'>
                     <img src={Photo} />
                 </div>
                 

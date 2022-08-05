@@ -1,0 +1,159 @@
+.contProjectMain {
+    display: flex;
+    align-items: center;
+    width: 1000px;
+    height: 400px;
+    margin-top: 150px;
+}
+
+.contProjectMainReverse {
+    flex-direction: row-reverse;
+}
+
+/* Img project */
+
+.projectImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 58%;
+    height: 90%;
+}
+
+
+.mainProjects img {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.borderImg, .borderImgReverse {
+    position: relative;
+}
+
+.borderImg::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    position: absolute;
+    top: 5px;
+    left: -12px;
+    border: 2px solid var(--green);
+    z-index: -1;
+    transition: all ease .2s;
+}
+
+
+.borderImgReverse::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    position: absolute;
+    top: 5px;
+    right: -12px;
+    border: 2px solid var(--green);
+    z-index: -1;
+    transition: all ease .2s;
+}
+
+.borderImgReverse:hover::after {
+    top: -2px;
+    right: -2px;
+}
+
+.borderImg:hover::after {
+    top: -2px;
+    left: -2px;
+}
+
+
+
+/* Project description */
+
+.descriptionProject {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 42%;
+    height: 90%;
+}
+
+.descriptionReverse {
+    align-items: flex-start;
+}
+
+.descriptionProject h5 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: var(--text-secondary);
+    
+}
+
+.desc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-btn);
+    padding: 5px;
+    width: 500px;
+    height: 120px;
+    z-index: 1;
+    border-radius: 4px;
+    margin: 20px 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.desc p {
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    color: #fff;
+    padding: 5px;
+    max-width: 95%;
+    max-height: 95%;
+}
+
+
+.contTechProject {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 80%;
+}
+
+.techReverse {
+    justify-content: flex-start;
+}
+
+.codeIcon {
+    font-size: 1.4rem;
+    color: #FFF;
+    margin-right: 10px;
+    color: var(--green);
+}
+
+.contTechProject span {
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    color: #fff;
+    padding: 5px;
+}
+
+.linkIcon {
+    font-size: 1.4rem;
+    color: var(--green);
+}
+
+.linksBtn {
+    display: flex;
+    justify-content: space-between;
+    width: 95px;
+    margin-top: 20px;
+}
+
+
