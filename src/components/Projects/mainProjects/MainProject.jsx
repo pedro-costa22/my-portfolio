@@ -1,15 +1,17 @@
 import './MainProject.css';
 import LinkButton from '../linksButton/LinkButton';
 
+
 import { FaCode, FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 function MainProject({title, description, img, linkSite, linkRepo, tech, reverse}){
+
     return (
         <div className={`contProjectMain ${reverse === true ? 'contProjectMainReverse' : ''}`}>
 
             <div className='projectImg'>
                 <div className={`${reverse === true ? 'borderImgReverse' : 'borderImg' }`}>
-                    <img src={img} />
+                    <img src={img}/>
                 </div>
             </div>
 

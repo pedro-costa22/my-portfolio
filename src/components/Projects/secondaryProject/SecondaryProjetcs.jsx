@@ -1,16 +1,18 @@
 import './SecondaryProjetcs.css';
 
-import { FaCode, FaGithub } from "react-icons/fa";
+import { FaCode, FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 import LinkButton from '../linksButton/LinkButton';
 
-function SecondaryProject({img, desc, title, linkRepo, tech}){
+
+function SecondaryProject({img, desc, title, repo, site, tech}){
+
+    
     return (
         <div className='contProject'>
-            <a href=''>
-                <img src={img}  />
-            </a>
-            
+
+            <img src={img}  />
+        
             <h5>{title}</h5>
 
             <p>{desc}</p>
@@ -21,7 +23,8 @@ function SecondaryProject({img, desc, title, linkRepo, tech}){
             </div>
 
             <div className="btnLink">
-                <LinkButton icon={<FaGithub className='linkIcon'/>}/>
+                <LinkButton link={repo} icon={<FaGithub className='linkIcon'/>} />
+                <LinkButton link={site} icon={<FaExternalLinkAlt className='linkIcon'/>} /> 
             </div>
             
 

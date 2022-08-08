@@ -30,7 +30,7 @@
     font-family: "Inter", sans-serif;
     font-size: .9rem;
     color: #fff;
-    margin-top: 15px
+    margin-top: 20px
 }
 
 .techBtn {
@@ -47,7 +47,107 @@
 }
 
 .btnLink {
+    display: flex;
+    justify-content: space-between;
     position: absolute;
     right: 0;
-    top: 240px;
+    top: 230px;
+    width: 90px;
+    
 }
+
+
+@media screen and (max-width: 575.98px) {
+    .secondaryProjects {
+        margin-top: 0px;
+    }
+    
+    .contProject {
+        width: 100%;
+        margin-top: 50px;
+       
+    }
+    .contProject img {
+        width:100%;
+        height: 180px;
+    }
+
+    .contProject h5{
+        font-size: 1.4rem;
+    }
+   
+    .linksBtn {
+        margin-top: 10px;
+        width: 85px;
+    }
+
+    .btnLink {
+        top: 190px;
+        width: 85px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
+
+    .secondaryProjects {
+        margin-top: 0px;
+    }
+    
+    .contProject {
+        width: 480px;
+       
+    }
+    .contProject img {
+        width: 480px;
+        height: 220px;
+    }
+   
+    .linksBtn {
+        margin-top: 10px;
+        width: 85px;
+    }
+
+    .btnLink {
+        top: 58%;
+        width: 85px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991.98px)  {
+    .secondaryProjects {
+        margin-top: 0px;
+    }
+    
+    .contProject {
+        width: 480px;
+       
+    }
+    .contProject img {
+        width: 480px;
+        height: 220px;
+    }
+   
+    .linksBtn {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+    .contProject {
+        width: 420px;
+       
+    }
+
+    .contProject img {
+        width: 420px;
+        height: 200px;
+    }
+
+    .btnLink {
+        top: 210px;
+    }
+
+   
+}
+
+
