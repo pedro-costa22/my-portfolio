@@ -7,6 +7,8 @@ import Main from '../pages/view/Main/Main';
 import ProjectsSection from './view/ProjectSection/ProjectsSection';
 import Footer from './view/Footer/Footer';
 
+import GlobalStyle from '../GlobalStyle';
+
 
 
 function App() {
@@ -19,6 +21,7 @@ function App() {
   return (
     <>
       <Theme.Provider value={{darkMode, setDarkMode}}>
+        <GlobalStyle darkMode={darkMode}/>
         <Header />
         <Main />
         <ProjectsSection />
