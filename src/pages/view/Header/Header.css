@@ -10,5 +10,13 @@
     background-size: 100% 80%;
 }
 
+.headerWhite {
+    background-image: url(../../../img/backgroundGrey.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% 80%;
+    
+}
+
 
 

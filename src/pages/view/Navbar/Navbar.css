@@ -13,6 +13,10 @@
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
+.containerNav.fixedWhite {
+    background: #f9f9f9;
+    
+}
 
 .cont_nav {
     display: flex;
@@ -29,9 +33,10 @@
     color: var(--green);
     font-size: 1.8rem;
     text-decoration: none;
-    letter-spacing: 1px;
-   
+    letter-spacing: 1px; 
 }
+
+
 
 .navbar, .navbar ul {
     display: flex;
@@ -171,6 +176,23 @@
     border-radius: 50%;
     transition: .4s;
     margin-left: 0px;
+}
+
+
+/* White mode */
+
+.cont_nav .logoBlue { 
+    color: var(--blue);
+    font-weight: 500;
+}
+
+.navbarWhite ul li a {
+    color: var(--text-blue);
+    font-weight: 600;
+}
+
+.navbarWhite ul li a::after {
+    background: var(--blue);
 }
 
 

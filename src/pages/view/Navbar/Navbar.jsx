@@ -54,11 +54,11 @@ function Navbar(){
    
 
     return (
-        <div className={`containerNav ${navFixed}`}>
+        <div className={`containerNav ${navFixed} ${theme.darkMode === false ? 'fixedWhite' : ''}`}>
             <div className='cont_nav'>
-            <a href='index.html' className='logo'>{logoText}</a>
+            <a href='index.html' className={`logo ${theme.darkMode === false ? 'logoBlue' : ''}`}>{logoText}</a>
 
-            <nav className={`navbar ${navFixed != '' ? 'menuListOpen' : ''}`} ref={navbar}>
+            <nav className={`navbar ${navFixed != '' ? 'menuListOpen' : ''} ${theme.darkMode === false ? 'navbarWhite' : ''}`} ref={navbar}>
                 <ul>
                     <li>
                         <a href=''><FiHome className='iconList'/> Home</a>

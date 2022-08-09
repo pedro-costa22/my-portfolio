@@ -18,11 +18,11 @@ const GlobalStyle = createGlobalStyle`
 
     ::-webkit-scrollbar {
         width: 10px;
-        background-color: var(--bg-scrollbar);
+        background-color: ${props => props.darkMode === true ? '#0a1635' : '#8d9cac'};
     }
 
     ::-webkit-scrollbar-thumb {
-        background-color: var(--green);
+        background-color: ${props => props.darkMode === true ? '#64FFDA' : '#0C517B'};
         border-radius: 5px;
     }
 
@@ -31,17 +31,21 @@ const GlobalStyle = createGlobalStyle`
         --bg-white: #fff;
         --bg-blue: #041029;
         --bg-blueSecondary: #040d22;
+        --bg-grey: #778899;
         --bg-btn: #0A192F;
         --bg-scrollbar: #0a1635;
         --green: #64FFDA;
+        --blue: #0C517B;
+        --text-blue: #151C29;
         --text: #F2F2F2;
         --text-secondary: #CCD6F6;
+        --text-whiteMode: rgba(0, 0, 0, 0.7);
     }
 
     body {
         font-family: "Inter", sans-serif;
         font-size: 1rem;
-        background: ${props => props.darkMode === true ? "#020814" : "#FFF"};
+        background: ${props => props.darkMode === true ? "#020814" : "#F9F9F9"};
     }
 
 

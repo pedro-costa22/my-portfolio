@@ -8,7 +8,6 @@
 }
 
 
-
 /* intro text */
 .introText {
     display: flex;
@@ -126,6 +125,27 @@
     }
 }
 
+
+
+/* White mode */
+.introTextWhite h3 {
+    color: var(--bg-blue);
+    font-weight: 500;
+}
+
+.introTextWhite h2 {
+    color: var(--blue);
+}
+
+.devBoxWhite {
+    background: var(--blue);
+    color: #fff;
+    font-weight: 500;
+}
+
+.iconSocialWhite {
+    color: #fff;
+}
 
 
 
