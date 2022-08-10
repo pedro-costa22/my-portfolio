@@ -5,6 +5,8 @@ import { FaCode, FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import LinkButton from '../linksButton/LinkButton';
 
 
+
+
 function SecondaryProject({img, desc, title, repo, site, tech}){
 
     
@@ -28,7 +30,7 @@ function SecondaryProject({img, desc, title, repo, site, tech}){
             </div>
             
 
-            
+           
 
         </div>
     )

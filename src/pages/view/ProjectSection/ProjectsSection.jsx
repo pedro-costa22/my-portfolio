@@ -3,6 +3,7 @@ import './ProjectsSection.css';
 import MainProject from '../../../components/Projects/mainProjects/MainProject';
 import SecondaryProject from '../../../components/Projects/secondaryProject/SecondaryProjetcs';
 
+
 import bfcrypto from '../../../img/bfcrypto.PNG';
 import momento from '../../../img/momento.PNG';
 import cloneNetflix from '../../../img/cloneNetflix.png';
@@ -10,10 +11,13 @@ import resolute from '../../../img/resolute.png';
 import curriculoWeb from '../../../img/curriculoWeb.png';
 import vagaBank from '../../../img/vagaBank.png';
 
+
 function ProjectsSection(){
 
     return(
         <section className='contProjects'>
+
+           
 
             <div className='mainProjects'>
                 <h4>{"{  Princípais projetos  }"}</h4>
@@ -24,6 +28,7 @@ function ProjectsSection(){
                     img={momento}
                     linkSite="https://momento-cursos.vercel.app/"
                     linkRepo="https://github.com/pedro-costa22/project-momento"
+                    projectImages={[bfcrypto, momento, cloneNetflix, resolute, curriculoWeb]}
                     tech={['ReactJS', 'JavaScript', 'CSS']}
                 
                 />
@@ -38,7 +43,6 @@ function ProjectsSection(){
                     tech={['Html', 'CSS', 'JavaScript']}
                 
                 />
-
 
             </div>
 
@@ -87,7 +91,7 @@ function ProjectsSection(){
                 <a href='https://github.com/pedro-costa22' target="_blank">Ver todos projetos</a>
             </div>
 
-            
+          
         </section>
     )
 };

@@ -1,17 +1,29 @@
 import './MainProject.css';
 import LinkButton from '../linksButton/LinkButton';
-
+import {useContext, useState} from 'react';
 
 import { FaCode, FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
-function MainProject({title, description, img, linkSite, linkRepo, tech, reverse}){
+import Theme from '../../../theme/Theme';
+
+
+function MainProject({title, description, img, linkSite, linkRepo, tech, reverse, projectImages}){
+
+    const theme = useContext(Theme);
+    
 
     return (
         <div className={`contProjectMain ${reverse === true ? 'contProjectMainReverse' : ''}`}>
-
+    
             <div className='projectImg'>
                 <div className={`${reverse === true ? 'borderImgReverse' : 'borderImg' }`}>
-                    <img src={img}/>
+                    <img src={img} 
+                        onClick={() => theme.setStateDemo(prevState => ({
+                            ...prevState,
+                            demo: true,
+                            slide: projectImages
+                        })) }
+                    />
                 </div>
             </div>
 
@@ -45,6 +57,8 @@ function MainProject({title, description, img, linkSite, linkRepo, tech, reverse
               </div>
                 
             </div>
+
+            
         </div>
     )
 } ;

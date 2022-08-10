@@ -6,6 +6,8 @@ import { FiHome, FiUser, FiEdit3, FiFolder, FiMail, FiAlignRight, FiX } from "re
 import Theme from '../../../theme/Theme';
 
 
+
+
 function Navbar(){
 
     const logoText = '<PH/>';
@@ -90,6 +92,10 @@ function Navbar(){
 
           
         </div>
+
+       
+
+        
         </div>
     )
 };
