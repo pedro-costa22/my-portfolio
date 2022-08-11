@@ -1,9 +1,14 @@
 import './Footer.css';
 
-function Footer(){
-    return (
-        <footer>
+import Theme from '../../../theme/Theme';
+import { useContext } from 'react';
 
+function Footer(){
+
+    const theme = useContext(Theme);
+
+    return (
+        <footer className={`${theme.darkMode === false ? 'footerWhite' : ''}`}>
             <p>
                 Developed by  
                 <span>

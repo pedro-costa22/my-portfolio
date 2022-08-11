@@ -156,6 +156,25 @@
     margin-top: 20px;
 }
 
+/* White mode */
+.descriptionProjectWhite h5, .codeIconWhite{
+    color: #026773;
+}
+
+.descWhite {
+    background: #026773;
+}
+
+.techSpan {
+    color: #026773 !important;
+    font-weight: 500;
+}
+
+.linkIconWhite {
+    color: #fff;
+}
+
+
 
 
 @media screen and (max-width: 575.98px) {

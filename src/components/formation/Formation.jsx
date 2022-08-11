@@ -1,9 +1,11 @@
 import './Formation.css'
 
-import {useState, useRef, useEffect} from 'react';
+import {useState, useRef, useEffect, useContext} from 'react';
 
 import FormationButton from './formationButton/FormationButton';
 import FormationText from './formationText/FormationText';
+
+import Theme from '../../theme/Theme';
 
 function Formation(){
 
@@ -17,6 +19,7 @@ function Formation(){
     const teste = useRef();
    
 
+    const theme = useContext(Theme);
    
     const handleFormationButton = (action) => {
         switch(action){
@@ -65,7 +68,7 @@ function Formation(){
     
 
     return (
-        <div className={`contFormation ${state.visibleForm === true ? 'visible' : ''}`} ref={positionForm}>
+        <div className={`contFormation ${state.visibleForm === true ? 'visible' : ''} ${theme.darkMode === false ? 'contFormationWhite' : ''}`} ref={positionForm} >
             <div className='formationButtons'>
                 <h3>Formação</h3>
                 <FormationButton title="Graduação" btnClass={state.graduation} setState={handleFormationButton} action="graduation"/>

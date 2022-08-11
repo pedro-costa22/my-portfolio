@@ -8,6 +8,8 @@ import ProjectsSection from './view/ProjectSection/ProjectsSection';
 import Footer from './view/Footer/Footer';
 import Demo from '../components/demonstrative/Demo';
 
+import GlobalStyle from '../GlobalStyle';
+
 
 
 function App() {
@@ -25,8 +27,13 @@ function App() {
 
   return (
     <>
+<<<<<<< HEAD
       <Theme.Provider value={{darkMode, setDarkMode, stateDemo, setStateDemo}}>
         {stateDemo.demo && <Demo slide={stateDemo.slide}/>}
+=======
+      <Theme.Provider value={{darkMode, setDarkMode}}>
+        <GlobalStyle darkMode={darkMode}/>
+>>>>>>> darkMode
         <Header />
         <Main />
         <ProjectsSection />

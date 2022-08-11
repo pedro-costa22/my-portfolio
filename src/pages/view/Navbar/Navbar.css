@@ -14,6 +14,7 @@
 }
 
 
+
 .cont_nav {
     display: flex;
     justify-content: space-between;
@@ -29,9 +30,10 @@
     color: var(--green);
     font-size: 1.8rem;
     text-decoration: none;
-    letter-spacing: 1px;
-   
+    letter-spacing: 1px; 
 }
+
+
 
 .navbar, .navbar ul {
     display: flex;
@@ -173,7 +175,48 @@
     margin-left: 0px;
 }
 
+.btnMenuMobileWhite span{
+    background: var(--bg-green);
+}
 
+
+/* White mode */
+
+.cont_nav .logoBlue { 
+    color: var(--text-green);
+    font-weight: 500;
+}
+
+.navbarWhite ul li a {
+    color: var(--bg-color);
+    font-weight: 600;
+}
+
+.navbarWhite ul li a::after {
+    background: var(--text-green);
+}
+
+.fixedWhite {
+    background: var(--bg-green) !important;
+}
+
+.fixedWhite .btnMenuMobileWhite span{
+    background: #F9F9F9;
+}
+
+.fixedWhite .navbarWhite {
+    background-color: var(--bg-green);
+}
+
+.fixedWhite .logoBlue {
+    color: #fff;
+    font-weight: 400;
+}
+
+.fixedWhite ul li a {
+    color: #fff;
+    font-weight: 500;
+}
 
 /* --- Responsive navbar --- */
 
@@ -200,6 +243,12 @@
         align-items: center;
         transition: all ease-in .4s;  
     }
+
+    .navbarWhite {
+        background-color: #F9F9F9;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    }
+
 
     .navbar.active {
         right: 0%;
@@ -309,6 +358,11 @@
         transition: all ease-in .4s;  
     }
 
+    .navbarWhite {
+        background-color: #F9F9F9;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    }
+
     .navbar.active {
         right: 0%;
     }
@@ -410,6 +464,11 @@
         justify-content: space-around;
         align-items: center;
         transition: all ease-in .4s;  
+    }
+
+    .navbarWhite {
+        background-color: #F9F9F9;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
     }
 
     .navbar.active {

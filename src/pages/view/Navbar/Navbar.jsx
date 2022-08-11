@@ -23,7 +23,7 @@ function Navbar(){
         let scrollPosition = window.pageYOffset;
         
         if(scrollPosition >= 800) {
-            setNavFixed('fixed');
+            setNavFixed(`fixed`);
         }else {
             setNavFixed('');
         }
@@ -56,11 +56,11 @@ function Navbar(){
    
 
     return (
-        <div className={`containerNav ${navFixed}`}>
+        <div className={`containerNav ${navFixed} ${navFixed === 'fixed' && theme.darkMode === false ? 'fixedWhite' : ''}`}>
             <div className='cont_nav'>
-            <a href='index.html' className='logo'>{logoText}</a>
+            <a href='index.html' className={`logo ${theme.darkMode === false ? 'logoBlue' : ''}`}>{logoText}</a>
 
-            <nav className={`navbar ${navFixed != '' ? 'menuListOpen' : ''}`} ref={navbar}>
+            <nav className={`navbar ${navFixed != '' ? 'menuListOpen' : ''} ${theme.darkMode === false ? 'navbarWhite' : ''}`} ref={navbar}>
                 <ul>
                     <li>
                         <a href=''><FiHome className='iconList'/> Home</a>
@@ -84,7 +84,7 @@ function Navbar(){
                     </button>
             </nav>
 
-            <button className='btnMenuMobile' onClick={() => setMenuToggle(!menuToggle)} ref={button}>
+            <button className={`btnMenuMobile ${theme.darkMode === false ? 'btnMenuMobileWhite' : ''}`} onClick={() => setMenuToggle(!menuToggle)} ref={button}>
                 <span className='btnLine line1'></span>
                 <span className='btnLine line2'></span>
                 <span className='btnLine line3'></span>

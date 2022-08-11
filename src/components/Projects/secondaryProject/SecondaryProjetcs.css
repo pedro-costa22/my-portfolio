@@ -56,6 +56,35 @@
     
 }
 
+/* WhiteMode */
+.contProjectWhite h5 {
+    color: #026773;
+    font-weight: 500;
+}
+
+.contProjectWhite p {
+    color: var(--text-whiteMode);
+    font-weight: 500;
+}
+
+.contProjectWhite img {
+    border-left: 4px solid #026773;
+}
+
+.linkWhite {
+    color: #026773;
+}
+
+.techBtnWhite span {
+    color: #026773;
+    font-weight: 600;
+}
+
+.iconWhite{
+    color: #fff;
+}
+
+
 
 @media screen and (max-width: 575.98px) {
     .secondaryProjects {

@@ -73,7 +73,7 @@ function About(){
                 
             </div>
 
-            <div className="aboutItems">
+            <div className="aboutItems aboutButtonsWhite">
 
                 <div className={`aboutButtons ${state.selected}`}>
                     <AboutButton text="Sobre mim"  state={state.about} setState={handleAboutButton} action="about"/>

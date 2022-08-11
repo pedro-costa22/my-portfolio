@@ -1,9 +1,11 @@
-import { useDebugValue, useEffect, useRef, useState } from 'react';
+import { useContext, useDebugValue, useEffect, useRef, useState } from 'react';
 import './FormationText.css';
 
 
 
 function FormationText({title, text}){
+
+   
 
    
     return(

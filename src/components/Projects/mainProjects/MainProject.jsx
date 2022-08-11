@@ -1,15 +1,28 @@
 import './MainProject.css';
 import LinkButton from '../linksButton/LinkButton';
+<<<<<<< HEAD
 import {useContext, useState} from 'react';
 
 import { FaCode, FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import Theme from '../../../theme/Theme';
+=======
+
+import Theme from '../../../theme/Theme';
+
+import { FaCode, FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { useContext } from 'react';
+>>>>>>> darkMode
 
 
+<<<<<<< HEAD
 function MainProject({title, description, img, linkSite, linkRepo, tech, reverse, projectImages}){
 
     const theme = useContext(Theme);
     
+=======
+    const theme = useContext(Theme);
+
+>>>>>>> darkMode
     return (
         <div className={`contProjectMain ${reverse === true ? 'contProjectMainReverse' : ''}`}>
     
@@ -25,17 +38,17 @@ function MainProject({title, description, img, linkSite, linkRepo, tech, reverse
                 </div>
             </div>
 
-            <div className={`descriptionProject ${reverse === true ? 'descriptionReverse' : ''}`}>
+            <div className={`descriptionProject ${theme.darkMode === false ? 'descriptionProjectWhite' : ''} ${reverse === true ? 'descriptionReverse' : ''}`}>
                 <h5>{title}</h5>
 
-                <span className='desc'>
+                <span className={`desc ${theme.darkMode === false ? 'descWhite' : ''}`}>
                     <p>{description}</p>
                 </span>
                 
-              <div className={`contTechProject ${reverse === true ? 'techReverse' : ''}`}>
-                <FaCode className='codeIcon'/>
+              <div className={`contTechProject  ${reverse === true ? 'techReverse' : ''}`}>
+                <FaCode className={`codeIcon ${theme.darkMode === false ? 'codeIconWhite' : ''}`}/>
                  {tech.map(element => 
-                    <span>{element}</span>    
+                    <span className={`${theme.darkMode === false ? 'techSpan' : ''}`}>{element}</span>    
                  )}
               </div>
 
@@ -43,12 +56,12 @@ function MainProject({title, description, img, linkSite, linkRepo, tech, reverse
 
                     <LinkButton 
                         link={linkSite}
-                        icon={<FaExternalLinkAlt className='linkIcon'/>}
+                        icon={<FaExternalLinkAlt className={`linkIcon ${theme.darkMode === false ? 'linkIconWhite' : ''}`}/>}
                     />
 
                     <LinkButton 
                         link={linkRepo}
-                        icon={<FaGithub className='linkIcon'/>}
+                        icon={<FaGithub className={`linkIcon ${theme.darkMode === false ? 'linkIconWhite' : ''}`}/>}
                     />
 
                    

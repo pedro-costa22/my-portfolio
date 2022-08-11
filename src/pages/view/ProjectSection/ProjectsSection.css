@@ -45,6 +45,16 @@
     text-decoration: underline;
 }
 
+/* White mode */
+.mainProjectsWhite h4{
+    color: var(--bg-greenSecondary);
+}
+
+.mostProjectWhite a {
+    color: #026773;
+    font-weight: 600;
+}
+
 
 @media screen and (max-width: 575.98px) {
     .secondaryProjects {
