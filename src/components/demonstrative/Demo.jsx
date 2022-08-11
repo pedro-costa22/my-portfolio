@@ -31,11 +31,11 @@ function Demo({slide}){
                 <input type="radio" name="slider" id="s4" />
                 <input type="radio" name="slider" id="s5" />
 
-                <label for="s1" id="slide1">1</label>
-                <label for="s2" id="slide2">2</label>
-                <label for="s3" id="slide3">3</label>
-                <label for="s4" id="slide4">4</label>
-                <label for="s5" id="slide5">5</label>
+                <label Htmlfor="s1" id="slide1">1</label>
+                <label Htmlfor="s2" id="slide2">2</label>
+                <label Htmlfor="s3" id="slide3">3</label>
+                <label Htmlfor="s4" id="slide4">4</label>
+                <label Htmlfor="s5" id="slide5">5</label>
                 </div>
 
                 

@@ -26,7 +26,7 @@ function SecondaryProject({img, desc, title, repo, site, tech}){
 
             <div className={`techBtn ${theme.darkMode === false ? 'techBtnWhite' : ''}`}>
                 <FaCode className={`linkIcon ${theme.darkMode === false ? 'linkWhite' : ''}`}/>
-                {tech.map(item => <span>{item}</span>)}
+                {tech.map(item => <span key={item}>{item}</span>)}
             </div>
 
             <div className="btnLink">

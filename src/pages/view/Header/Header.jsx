@@ -11,14 +11,8 @@ function Header(){
 
     const theme = useContext(Theme);
 
-
     return (
-<<<<<<< HEAD
-        <header className="header">
-            
-=======
         <header className={`header ${theme.darkMode === false ? 'headerWhite' : ''}`}>
->>>>>>> darkMode
             <Navbar />
             <Intro />
         </header>

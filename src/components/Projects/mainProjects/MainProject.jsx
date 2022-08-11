@@ -1,28 +1,18 @@
 import './MainProject.css';
 import LinkButton from '../linksButton/LinkButton';
-<<<<<<< HEAD
-import {useContext, useState} from 'react';
+
+import {useContext} from 'react';
 
 import { FaCode, FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import Theme from '../../../theme/Theme';
-=======
-
-import Theme from '../../../theme/Theme';
-
-import { FaCode, FaGithub, FaExternalLinkAlt } from "react-icons/fa";
-import { useContext } from 'react';
->>>>>>> darkMode
 
 
-<<<<<<< HEAD
+
+
 function MainProject({title, description, img, linkSite, linkRepo, tech, reverse, projectImages}){
 
     const theme = useContext(Theme);
     
-=======
-    const theme = useContext(Theme);
-
->>>>>>> darkMode
     return (
         <div className={`contProjectMain ${reverse === true ? 'contProjectMainReverse' : ''}`}>
     
@@ -48,7 +38,7 @@ function MainProject({title, description, img, linkSite, linkRepo, tech, reverse
               <div className={`contTechProject  ${reverse === true ? 'techReverse' : ''}`}>
                 <FaCode className={`codeIcon ${theme.darkMode === false ? 'codeIconWhite' : ''}`}/>
                  {tech.map(element => 
-                    <span className={`${theme.darkMode === false ? 'techSpan' : ''}`}>{element}</span>    
+                    <span key={element} className={`${theme.darkMode === false ? 'techSpan' : ''}`}>{element}</span>    
                  )}
               </div>
 

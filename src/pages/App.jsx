@@ -22,18 +22,11 @@ function App() {
   })
 
 
- 
-
-
   return (
     <>
-<<<<<<< HEAD
       <Theme.Provider value={{darkMode, setDarkMode, stateDemo, setStateDemo}}>
         {stateDemo.demo && <Demo slide={stateDemo.slide}/>}
-=======
-      <Theme.Provider value={{darkMode, setDarkMode}}>
         <GlobalStyle darkMode={darkMode}/>
->>>>>>> darkMode
         <Header />
         <Main />
         <ProjectsSection />

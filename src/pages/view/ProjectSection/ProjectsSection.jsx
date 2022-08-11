@@ -11,27 +11,19 @@ import resolute from '../../../img/resolute.png';
 import curriculoWeb from '../../../img/curriculoWeb.png';
 import vagaBank from '../../../img/vagaBank.png';
 
-<<<<<<< HEAD
-=======
 import Theme from '../../../theme/Theme';
 import { useContext } from 'react';
->>>>>>> darkMode
+
 
 function ProjectsSection(){
 
     const theme = useContext(Theme);
-    console.log(theme);
-
+   
     return(
         <section className='contProjects'>
 
-<<<<<<< HEAD
-           
-
-            <div className='mainProjects'>
-=======
             <div className={`mainProjects ${theme.darkMode === false ? 'mainProjectsWhite' : ''}`}>
->>>>>>> darkMode
+
                 <h4>{"{  Princípais projetos  }"}</h4>
                 <MainProject 
                     reverse={false}
