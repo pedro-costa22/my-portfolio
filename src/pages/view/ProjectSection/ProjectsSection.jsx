@@ -10,12 +10,18 @@ import resolute from '../../../img/resolute.png';
 import curriculoWeb from '../../../img/curriculoWeb.png';
 import vagaBank from '../../../img/vagaBank.png';
 
+import Theme from '../../../theme/Theme';
+import { useContext } from 'react';
+
 function ProjectsSection(){
+
+    const theme = useContext(Theme);
+    console.log(theme);
 
     return(
         <section className='contProjects'>
 
-            <div className='mainProjects'>
+            <div className={`mainProjects ${theme.darkMode === false ? 'mainProjectsWhite' : ''}`}>
                 <h4>{"{  Princípais projetos  }"}</h4>
                 <MainProject 
                     reverse={false}
@@ -83,7 +89,7 @@ function ProjectsSection(){
             </div>
 
 
-            <div className='mostProject'>
+            <div className={`mostProject ${theme.darkMode === false ? 'mostProjectWhite' : ''}`}>
                 <a href='https://github.com/pedro-costa22' target="_blank">Ver todos projetos</a>
             </div>
 

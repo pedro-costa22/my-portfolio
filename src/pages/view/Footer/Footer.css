@@ -21,3 +21,7 @@ footer p span a{
     color: var(--green);
     text-decoration: none;
 }
+
+.footerWhite {
+    background-color: var(--bg-green);
+}

@@ -18,11 +18,11 @@ const GlobalStyle = createGlobalStyle`
 
     ::-webkit-scrollbar {
         width: 10px;
-        background-color: ${props => props.darkMode === true ? '#0a1635' : '#8d9cac'};
+        background-color: ${props => props.darkMode === true ? '#0a1635' : '#012E40'};
     }
 
     ::-webkit-scrollbar-thumb {
-        background-color: ${props => props.darkMode === true ? '#64FFDA' : '#0C517B'};
+        background-color: ${props => props.darkMode === true ? '#64FFDA' : '#3CA6A6'};
         border-radius: 5px;
     }
 
@@ -31,15 +31,17 @@ const GlobalStyle = createGlobalStyle`
         --bg-white: #fff;
         --bg-blue: #041029;
         --bg-blueSecondary: #040d22;
-        --bg-grey: #778899;
+        --bg-green: #001A24;
+        --bg-greenSecondary: #024959;
         --bg-btn: #0A192F;
         --bg-scrollbar: #0a1635;
         --green: #64FFDA;
         --blue: #0C517B;
         --text-blue: #151C29;
+        --text-green: #026773;
         --text: #F2F2F2;
         --text-secondary: #CCD6F6;
-        --text-whiteMode: rgba(0, 0, 0, 0.7);
+        --text-whiteMode: rgba(0, 0, 0, 9);
     }
 
     body {

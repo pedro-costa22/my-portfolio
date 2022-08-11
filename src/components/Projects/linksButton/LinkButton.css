@@ -16,6 +16,10 @@
     transform: translate3d(0px, -3px, 5px);
 }
 
+.iconLinkWhite {
+    background: #024959;
+}
+
 @media screen and (max-width: 575.98px) {
     .iconLink {
         width: 38px;

@@ -129,22 +129,22 @@
 
 /* White mode */
 .introTextWhite h3 {
-    color: var(--bg-blue);
+    color: #5E5E5E;
     font-weight: 500;
 }
 
 .introTextWhite h2 {
-    color: var(--blue);
+    color: var(--text-green);
 }
 
 .devBoxWhite {
-    background: var(--blue);
+    background: var(--text-green);
     color: #fff;
     font-weight: 500;
 }
 
 .iconSocialWhite {
-    color: #fff;
+    color: var(--text-green);
 }
 
 
