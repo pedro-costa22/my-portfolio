@@ -68,7 +68,7 @@ function Formation(){
     
 
     return (
-        <div className={`contFormation ${state.visibleForm === true ? 'visible' : ''} ${theme.darkMode === false ? 'contFormationWhite' : ''}`} ref={positionForm} >
+        <div className={`contFormation ${state.visibleForm === true ? 'visible' : ''} ${theme.darkMode === false ? 'contFormationWhite' : ''}`} ref={positionForm} id="formation">
             <div className='formationButtons'>
                 <h3>Formação</h3>
                 <FormationButton title="Graduação" btnClass={state.graduation} setState={handleFormationButton} action="graduation"/>

@@ -12,7 +12,7 @@ function Header(){
     const theme = useContext(Theme);
 
     return (
-        <header className={`header ${theme.darkMode === false ? 'headerWhite' : ''}`}>
+        <header className={`header ${theme.darkMode === false ? 'headerWhite' : ''}`} id="top">
             <Navbar />
             <Intro />
         </header>

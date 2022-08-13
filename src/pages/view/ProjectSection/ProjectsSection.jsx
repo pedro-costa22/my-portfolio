@@ -20,7 +20,7 @@ function ProjectsSection(){
     const theme = useContext(Theme);
    
     return(
-        <section className='contProjects'>
+        <section className='contProjects' id='project'>
 
             <div className={`mainProjects ${theme.darkMode === false ? 'mainProjectsWhite' : ''}`}>
 
