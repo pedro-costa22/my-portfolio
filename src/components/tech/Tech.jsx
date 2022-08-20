@@ -3,6 +3,7 @@ import './Tech.css';
 import TechButton from './techButtons/TechButton';
 
 import {FaHtml5, FaCss3Alt, FaSass, FaBootstrap, FaJsSquare, FaReact, FaNodeJs } from "react-icons/fa";
+import { DiGithubBadge, DiPhp, DiJavascript1, DiMysql } from "react-icons/di";
 
 function Tech(){
     return (
@@ -16,9 +17,9 @@ function Tech(){
                 <TechButton icon={<FaJsSquare className='iconTech'/>}/>
                 <TechButton icon={<FaReact className='iconTech'/>}/>
                 <TechButton icon={<FaNodeJs className='iconTech'/>}/>
-                <TechButton icon={<FaNodeJs className='iconTech'/>}/>
-                <TechButton icon={<FaNodeJs className='iconTech'/>}/>
-                <TechButton icon={<FaNodeJs className='iconTech'/>}/>
+                <TechButton icon={<DiGithubBadge className='iconTech'/>}/>
+                <TechButton icon={<DiPhp className='iconTech'/>}/>
+                <TechButton icon={<DiMysql className='iconTech'/>}/>
                 
             </div>
             

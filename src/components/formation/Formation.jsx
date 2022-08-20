@@ -80,17 +80,14 @@ function Formation(){
                     state.graduation != '' ? 
                     <FormationText 
                         title="Análise e Desenvolvimento de Sistemas - Uninove"  
-                        text="Lörem ipsum kang heteror in inte sukäling. Pekroledes sel spel till kror, sor pobelt. 
-                        Euror söment podat. Svininfluensa tävla ut. Dipoktiga misk. Du kan vara drabbad. 
-                        Vyv. 
-                        Lörem ipsum kang heteror in inte sukäling. Pekroledes sel spel till kror, sor pobelt."
+                        text="No curso são oferecidas disciplinas visando a formação Full Stack com disciplinas que visam apresentar conceitos para o desenvolvimento Front-End e Back-End.
+                        As principais atribuições do Tecnólogo em Análise e Desenvolvimento de Sistemas são: analisar, projetar, documentar, especificar, testar, implantar e manter sistemas de computação."
                     /> :
                     <FormationText 
                         title="Desenvolvimento web Java - Instituto PROA"  
-                        text="Lörem ipsum kang heteror in inte sukäling. Pekroledes sel spel till kror, sor pobelt. 
-                        Euror söment podat. Svininfluensa tävla ut. Dipoktiga misk. Du kan vara drabbad. 
-                        Vyv. 
-                        Lörem ipsum kang heteror in inte sukäling. Pekroledes sel spel till kror, sor pobelt."
+                        text="O curso profissionalizante oferecido  pelo instituto PROA em parceria com o Senac, possui duração de 1 semestre e passa 
+                              pela trilha de desenvolvimento fullstack, abordando as princípais tecnologias utilizadas no frontend (HTML, CSS, JavaScript e ReactJS) 
+                              no backend utilizamos (Java e SpringBoot) e banco de dados MySQL.  "
                     />
                 }
             </div>

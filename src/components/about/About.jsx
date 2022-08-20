@@ -82,14 +82,17 @@ function About(){
 
                 <div className='aboutText'>
                     {state.about == 'active' ? 
-                        <Text text="ABOUT ipsum dolor sit amet consectetur, adipisicing elit. Maxime alias, modi, necessitatibus commodi autem ipsa fugit aut voluptas nemo odio quis voluptates libero, eveniet tenetur quas animi? Quo, eligendi pariatur!
-                        ABOUT ipsum dolor sit amet consectetur, adipisicing elit. Maxime alias, modi, necessitatibus commodi autem ipsa fugit aut voluptas nemo odio quis voluptates libero, eveniet tenetur quas animi? Quo, eligendi pariatur!
-                        "/>
+                        <Text text='Sempre fui apaixonado por tecnologia. Minha curiosidade a respeito da área no inicio me levou para o "hardware", onde aprendi a realizar manutenção de computadores e realizei alguns trabalhos autônomos com montagem e concerto de máquinas. 
+                        Com o tempo fui conhecendo mais sobre as áreas relacionadas à tecnologia da informação e me deparei com a programação, onde de fato me identifiquei. Atualmente concentro meus estudos no desenvolvimento "front-end", ao qual pretendo me especializar, até estar pronto para novas práticas. 
+                        Gosto de aprender coisas novas, o desafio é uma das minhas maiores motivações e o desenvolvimento de sistemas com certeza tem me proporcionado ótimos desafios. '/>
                         : 
                         <Text text="
-                        EXPERIENCIA ipsum dolor sit amet consectetur, adipisicing elit. Maxime alias, modi, necessitatibus commodi autem ipsa fugit aut voluptas nemo odio quis voluptates libero, eveniet tenetur quas animi? Quo, eligendi pariatur!
-                        EXPERIENCIA ipsum dolor sit amet consectetur, adipisicing elit. Maxime alias, modi, necessitatibus commodi autem ipsa fugit aut voluptas nemo odio quis voluptates libero, eveniet tenetur quas animi? Quo, eligendi pariatur!
-                        "/>
+                        Como estagiário em front-end, fico responsável por auxiliar minha squad na criação das interfaces, 
+                        utilizando as principais tecnologias do mercado. (HTML, CSS, Sass, JavaScript, ReactJS, TypeScript e NodeJS). 
+                        "
+                        title="Estagiário de Desenvolvimento Front-end - (08/2022 - Atual)"
+                        classTitle="titleExp"
+                        />
                     }
 
                 </div>
@@ -102,5 +105,8 @@ function About(){
         </div>
     )
 };
+
+
+
 
 export default About;

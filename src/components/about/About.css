@@ -117,13 +117,13 @@
 
     .aboutItems {
         width: 100%;
-        height: 202px;
+        height: 220px;
         margin-bottom: 10px;
     }
 
-    .textAbout {
+    .textAbout, .titleExp  {
         width: 98%;
-        font-size: .8rem;
+        font-size: .7rem;
     }
 
     .aboutButtons.selected::before {
@@ -150,7 +150,7 @@
 
     .curriculoButton {
         position: absolute;
-        bottom: -30px;
+        bottom: -60px;
         left: 0;
         width: 100%;
         
@@ -182,9 +182,9 @@
         height: 202px;
     }
 
-    .textAbout {
+    .textAbout, .titleExp  {
         width: 98%;
-        font-size: .8rem;
+        font-size: .72rem;
     }
 
     .aboutButtons.selected::before {
@@ -264,9 +264,9 @@
         height: 250px;
     }
 
-    .textAbout {
+    .textAbout, .titleExp  {
         width: 98%;
-        font-size: 1rem;
+        font-size: .83rem;
     }
 
     .aboutButtons.selected::before {
@@ -335,9 +335,9 @@
         margin-left: 20px;
     }
 
-    .textAbout {
+    .textAbout, .titleExp  {
         width: 98%;
-        font-size: .95rem;
+        font-size: .83rem;
     }
 
     .aboutButtons.selected::before {
@@ -392,7 +392,7 @@
         margin-top: 10px;
     }
 
-    .textAbout {
+    .textAbout, .titleExp  {
         font-size: 1rem;
     }
 

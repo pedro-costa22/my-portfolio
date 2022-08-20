@@ -3,6 +3,7 @@ import {Link} from 'react-scroll';
 import './Navbar.css';
 import Theme from '../../../theme/Theme';
 
+import { FaAdjust } from "react-icons/fa";
 
 function Navbar(){
 
@@ -72,10 +73,12 @@ function Navbar(){
                     </li>
                     
                 </ul>
-
+                    
                     <button className={`btnTheme ${theme.darkMode === false ? 'off' : ''}`} 
-                       onClick={() => theme.setDarkMode(!theme.darkMode)}>
+                        onClick={() => theme.setDarkMode(!theme.darkMode)}>
                     </button>
+                   
+                    
             </nav>
 
             <button className={`btnMenuMobile ${theme.darkMode === false ? 'btnMenuMobileWhite' : ''}`} onClick={() => setMenuToggle(!menuToggle)} ref={button}>
