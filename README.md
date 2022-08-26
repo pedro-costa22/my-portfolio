@@ -4,7 +4,7 @@
 - Stacks utilizadas
   - ReactJS;
   - Styled components; 
-  - CSS;
+  - CSS
  
  ### Acesse: 
 https://pedro-henrique.vercel.app/
