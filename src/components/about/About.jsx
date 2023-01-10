@@ -86,10 +86,9 @@ function About(){
                         Com o tempo fui conhecendo mais sobre as áreas relacionadas à tecnologia da informação e me deparei com a programação, onde de fato me identifiquei. Atualmente concentro meus estudos no desenvolvimento "front-end", ao qual pretendo me especializar, até estar pronto para novas práticas. 
                         Gosto de aprender coisas novas, o desafio é uma das minhas maiores motivações e o desenvolvimento de sistemas com certeza tem me proporcionado ótimos desafios. '/>
                         : 
-                        <Text text="
-                        Como estagiário em front-end, fico responsável por auxiliar minha squad na criação das interfaces, 
-                        utilizando as principais tecnologias do mercado. (HTML, CSS, Sass, JavaScript, ReactJS, TypeScript e NodeJS). 
-                        "
+                        <Text text="Como estagiário em front-end, fiquei responsável por auxiliar minha squad na manutenção do sistema POPULIS, 
+                        (correção de bugs, melhorias e desenvolvimento de novas funcionalidades). 
+                        Stacks: JavaScript, TypeScript, NodeJs, HTML, CSS, Sass, LitElement."
                         title="Estagiário de Desenvolvimento Front-end - (08/2022 - Atual)"
                         classTitle="titleExp"
                         />
