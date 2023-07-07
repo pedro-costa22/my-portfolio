@@ -8,6 +8,7 @@ import { DiGithubBadge, DiPhp, DiMysql } from "react-icons/di";
 import TsImg from '../../img/tsicon.png'; 
 import TailwindImg from '../../img/tailwindcss.png';
 import NextJs from '../../img/nextjs.png';
+import ExpressJs from '../../img/expressIcon.png';
 
 function Tech(){
 
@@ -25,6 +26,8 @@ function Tech(){
                 <TechButton icon={<FaReact className='iconTech'/>}/>
                 <TechButton icon={<img src={NextJs} width="64" className='iconImg'/>}/>
                 <TechButton icon={<FaNodeJs className='iconTech'/>}/>
+                <TechButton icon={<DiMysql className='iconTech'/>}/>
+                <TechButton icon={<img src={ExpressJs} width="64" className='iconImg'/>}/>
                 <TechButton icon={<DiGithubBadge className='iconTech'/>}/>
             </div>
             

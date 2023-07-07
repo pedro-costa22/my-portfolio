@@ -4,7 +4,7 @@ import AboutButton from './aboutButton/AboutButton';
 import Text from './textAbout/Text';
 import DownloadButton from './downloadButton/DownloadButton';
 
-import Photo from '../../img/photograph.png';
+import Photo from '../../img/profile.jpg';
 import { useState, useRef, useEffect } from 'react';
 
 import { FaCloudDownloadAlt } from "react-icons/fa";
@@ -82,16 +82,28 @@ function About(){
 
                 <div className='aboutText'>
                     {state.about == 'active' ? 
-                        <Text text='Sempre fui apaixonado por tecnologia. Minha curiosidade a respeito da área no inicio me levou para o "hardware", onde aprendi a realizar manutenção de computadores e realizei alguns trabalhos autônomos com montagem e concerto de máquinas. 
-                        Com o tempo fui conhecendo mais sobre as áreas relacionadas à tecnologia da informação e me deparei com a programação, onde de fato me identifiquei. Atualmente concentro meus estudos no desenvolvimento "front-end", ao qual pretendo me especializar, até estar pronto para novas práticas. 
-                        Gosto de aprender coisas novas, o desafio é uma das minhas maiores motivações e o desenvolvimento de sistemas com certeza tem me proporcionado ótimos desafios. '/>
+                        <Text text='Sempre fui apaixonado por tecnologia, minha curiosidade em programação me tornou um entusiasta de javascript, onde tenho concentrado meus estudos a algum tempo.
+                        Estou atuando como desenvolvedor frontend, utilizando as stacks: Javascript, Typescript, React, Next, Redux, Tailwind CSS, Sass, Styled-components.
+                        
+                        Dedico-me também aos estudos por conta própria do backend, utilizando Nodejs, Express, Sequelize, SQL e MongoDB, gosto muito do desenvolvimento web, e estou sempre buscando novas tecnologias para aprender, vejo isso como desafios estimulantes que me tornam cada vez mais um profissional competente para lidar com os desafios que encontramos diariamente.'/>
                         : 
-                        <Text text="Como estagiário em front-end, fiquei responsável por auxiliar minha squad na manutenção do sistema POPULIS, 
-                        (correção de bugs, melhorias e desenvolvimento de novas funcionalidades). 
-                        Stacks: JavaScript, TypeScript, NodeJs, HTML, CSS, Sass, LitElement."
-                        title="Estagiário de Desenvolvimento Front-end - (08/2022 - Atual)"
-                        classTitle="titleExp"
-                        />
+                        <>
+                            <Text text="Responsável por auxiliar minha squad na manutenção do sistema , 
+                            (correção de bugs, melhorias, desenvolvimento de novas funcionalidades e code review). 
+                            Stacks: JavaScript, TypeScript, NextJs, NodeJS, Styled-components, tailwind CSS, Sass. "
+                            title="Estagiário de Desenvolvimento Front-end - (02/2023 - Atual) - QFlash"
+                            classTitle="titleExp"
+                            />
+                            <Text text="Como estagiário em front-end, fiquei responsável por auxiliar minha squad na manutenção do sistema POPULIS, 
+                            (correção de bugs, melhorias e desenvolvimento de novas funcionalidades). 
+                            Stacks: JavaScript, TypeScript, HTML, CSS, Sass, LitElement."
+                            title={`
+                                Estagiário de Desenvolvimento Front-end - 
+                                (08/2022 - 12/2022) - GLR Consultoria em Sistemas Ltda
+                            `}
+                            classTitle="titleExp"
+                            />
+                        </>
                     }
 
                 </div>
