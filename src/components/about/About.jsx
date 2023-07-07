@@ -82,19 +82,19 @@ function About(){
 
                 <div className='aboutText'>
                     {state.about == 'active' ? 
-                        <Text text='Sempre fui apaixonado por tecnologia, minha curiosidade em programação me tornou um entusiasta de javascript, onde tenho concentrado meus estudos a algum tempo.
+                        <Text text='Sempre fui apaixonado por tecnologia, minha curiosidade em programação me tornou um entusiasta de javascript, onde tenho concentrado meus estudos há algum tempo.
                         Estou atuando como desenvolvedor frontend, utilizando as stacks: Javascript, Typescript, React, Next, Redux, Tailwind CSS, Sass, Styled-components.
                         
-                        Dedico-me também aos estudos por conta própria do backend, utilizando Nodejs, Express, Sequelize, SQL e MongoDB, gosto muito do desenvolvimento web, e estou sempre buscando novas tecnologias para aprender, vejo isso como desafios estimulantes que me tornam cada vez mais um profissional competente para lidar com os desafios que encontramos diariamente.'/>
+                        Dedico-me também aos estudos por conta própria do backend, utilizando Node.js, Express.js, Sequelize, SQL e MongoDB, gosto muito do desenvolvimento web, e estou sempre buscando novas tecnologias para aprender, vejo isso como desafios estimulantes que me tornam cada vez mais um profissional competente para lidar com os desafios que encontramos diariamente.'/>
                         : 
                         <>
-                            <Text text="Responsável por auxiliar minha squad na manutenção do sistema , 
+                            <Text text="Responsável por auxiliar minha squad na manutenção do sistema 
                             (correção de bugs, melhorias, desenvolvimento de novas funcionalidades e code review). 
                             Stacks: JavaScript, TypeScript, NextJs, NodeJS, Styled-components, tailwind CSS, Sass. "
                             title="Estagiário de Desenvolvimento Front-end - (02/2023 - Atual) - QFlash"
                             classTitle="titleExp"
                             />
-                            <Text text="Como estagiário em front-end, fiquei responsável por auxiliar minha squad na manutenção do sistema POPULIS, 
+                            <Text text="Como estagiário em front-end, fiquei responsável por auxiliar minha squad na manutenção do sistema POPULIS
                             (correção de bugs, melhorias e desenvolvimento de novas funcionalidades). 
                             Stacks: JavaScript, TypeScript, HTML, CSS, Sass, LitElement."
                             title={`

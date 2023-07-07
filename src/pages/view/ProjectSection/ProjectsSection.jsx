@@ -28,7 +28,7 @@ function ProjectsSection(){
                 <MainProject 
                     reverse={false}
                     title="Projeto - Momento"
-                    description="O projeto momento símula uma empresa que oferece cursos de tecnologia e ressalta pontos importantes que um desenvolvedor deve ter, como suas soft skills. Foi realizado durante o curso no instituto PROA."
+                    description="O projeto momento simula uma empresa que oferece cursos de tecnologia e ressalta pontos importantes que um desenvolvedor deve ter, como suas soft skills. Foi realizado durante o curso no instituto PROA."
                     img={momento}
                     linkSite="https://momento-cursos.vercel.app/"
                     linkRepo="https://github.com/pedro-costa22/project-momento"
@@ -53,7 +53,7 @@ function ProjectsSection(){
             <div className='secondaryProjects'>
                 <SecondaryProject 
                     img={cloneNetflix}
-                    desc="Realizado para práticar o uso da biblioteca ReactJS e consumo de API (Utilizei a API do The movie Database)"
+                    desc="Realizado para praticar o uso da biblioteca ReactJS e consumo de API (Utilizei a API do The movie Database)"
                     title="Clone Netflix"
                     tech={['ReactJS', 'JavaScript', 'CSS']}
                     repo="https://github.com/pedro-costa22/cloneNetflix-ReactJS"
